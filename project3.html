@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1{
+            color: rgb(218, 66, 32);
+        }
+        input{
+            width: 180px;
+            height: 40px;
+            font-size: 30px;
+            text-align: right;
+            border-color: black;
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            border-radius: 6px;
+            background-color: azure;
+            transition: 0.2s;
+        }
+        button:hover{
+       background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <input type="text">
+    <br>
+    <br>
+    
+
+
+    <button onclick="takeinput(2)">2</button>
+    <button onclick="takeinput(3)">3</button>
+    <button onclick="takeinput(4)">4</button>
+    <button onclick="takeinput(5)">5</button>
+    <button onclick="takeinput(6)">6</button>
+    <button onclick="takeinput(7)">7</button>
+    <br>
+    <br>
+    <button onclick="takeinput('+')">+</button>
+    <button onclick="takeinput('-')">-</button>
+    <button onclick="takeinput('*')">*</button>
+    <button onclick="takeinput('%')">%</button>
+    <button onclick="ac()">AC</button>
+
+    <button onclick="braber()">=</button>
+
+
+
+    <script>
+        function takeinput(a){
+            let screen = document.querySelector("input")
+            screen.value+=a
+        }
+        function ac (){
+document.querySelector("input").value="9"
+        }
+
+        function braber(){
+            let currentvalue=document.querySelector("input").value;
+            let result = eval(currentvalue)
+            document.querySelector("input").value=result;
+        }
+    </script>
+    
+
+
+
+
+</body>
+</html>

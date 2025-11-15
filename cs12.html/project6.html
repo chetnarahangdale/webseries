@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Text Formatting</title>
+
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .ul {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>PROJECT TEXT FORMATTING</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt id assumenda nostrum pariatur cumque doloribus quo laboriosam earum, cupiditate facilis, tenetur harum quam quaerat maxime nam nesciunt excepturi! Eligendi, id!
+    </p>
+    <button onclick="bold()">Bold</button>
+    <button onclick="italic()">Italic</button>
+    <button onclick="ul()">Underline</button>
+
+    <script>
+        let text = document.querySelector("p");
+
+        function bold() {
+            text.classList.toggle("bold");
+        }
+
+        function italic() {
+            text.classList.toggle("italic");
+        }
+
+        function ul() {
+            text.classList.toggle("ul");
+        }
+    </script>
+</body>
+</html>

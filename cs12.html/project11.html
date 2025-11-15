@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .contener{
+        border: 2px solid black;
+        padding: 10px;
+        width: fit-content;
+        background-color: aquamarine;
+        transform: scale(1);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        transform: scale(0);
+        transition: .7s ease;
+
+        
+    }
+    body{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #f40e38;
+
+    }
+    .show{
+        display: block;
+        /* display: none; */
+        transform: scale(1);
+    }
+    
+   </style>
+</head>
+<body>
+    <h1>LOGIN FORM</h1>
+    <button onclick="showform()">login</button>
+    <br>
+    <br><br>
+
+     <div class="contener">
+      <form action="/database.php" method="post">
+        
+        <label for="">name</label>
+        <input type="text">
+        <br><br>
+        <label for="">email</label>
+        <input type="email">
+        <br><br>
+        <label for="">phone</label>
+        <input type="phone">
+        <br><br>
+        <label for="">address</label>
+        <input type="address">
+        <br><br>
+        <button onclick="sumbit()">sumbit</button>
+      </form>
+      
+     </div>
+     <script>
+        let box = document.querySelector("div")
+        let form = document.querySelector("form")
+        function showform (){
+            box.classList.toggle("show");
+        }
+        form.addEventListener("submit",()=>{
+            alert("complete form")
+        })
+     </script>
+</body>
+</html>

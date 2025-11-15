@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .winter{
+      background-image: ul("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTivICfKAA2F6qZncacCuxLUz8KjMDRlVbjOg&s");
+    }
+    </style>
+</head>
+<body>
+    <h1>BULB ON OFF</h1>
+    <img src="https://image.similarpng.com/file/similarpng/very-thumbnail/2020/12/Light-bulb-on-transparent-background-PNG.png" width="200">
+    <br><br>
+    <button onclick="onbulb()">On</button>
+    <button onclick="offbulb()">off</button>
+    <button onclick="winter()">winter</button>
+    <script>
+        let img = document.querySelector("img")
+        let body = document.querySelector("body")
+        function onbulb(){
+            img.src="https://c8.alamy.com/comp/2D80FEB/glowing-light-bulb-on-dark-background-in-a-halo-of-light-2D80FEB.jpg"
+
+
+        }
+        function offbulb(){
+            img.src="https://image.similarpng.com/file/similarpng/very-thumbnail/2020/12/Light-bulb-on-transparent-background-PNG.png"
+        }
+        function winter(){
+            body.classList.toggle("winter")
+        }
+    </script>
+</body>
+</html>

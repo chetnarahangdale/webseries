@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class mobile{
+         constructor(Brand,Price){
+         this.Brand=Brand;
+         this.Price=Price;
+
+         }
+         show(){
+    console.log(`Mobile Brand is ${this.Brand},Mobile Price is ${this.Price}`);
+        
+    }
+   }
+   let MyMobile = new mobile("OPPOK12X","13000");  
+   MyMobile.show()
+
+
+   class student{
+         constructor(Name,Age){
+         this.Name=Name;
+         this.Age=Age;   
+         }
+         show(){
+         console.log(`Student name is ${this.Name},student age is ${this.Age}`);
+            
+         }
+      }
+      let sclstudent= new student("Nisha","18");
+      sclstudent.show()
+
+   class bike{
+      constructor(Model,color){
+      this.Model=Model;
+      this.color=color;
+       }
+       show(){
+      console.log(`Bike model is ${this.Model},Bike color is ${this.color}`);
+      
+       }
+      }
+      let mybike= new bike("bullet 350","black");
+      mybike.show()
+
+
+   class laptop{
+      constructor(Company,RAM){
+      this.Company=Company;
+      this.RAM=RAM;      
+      }
+      show(){
+      console.log(`laptop company is ${this.Company},laptop RAM is ${this.RAM}`);
+      }
+   }
+     let mylaptop= new laptop("HP","64GB");
+     mylaptop.show()
+     </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1><i><b><u>click counter</u></b></i></h1>
+        <button id="increaseubutton">></button>
+        <p><span id="count">0</span></p>
+        <button id="decreasebutton"><</button>
+    </div>
+    <script>
+        let count =0;
+        let countDisplay=document.getElementById("count")
+        let increaseubutton=document.getElementById("increaseubutton")
+        let decreasebutton=document.getElementById("decreasebutton")
+     function updateDisplay(){
+        countDisplay.textContent=count;
+     }
+     increaseubutton.addEventListener("click",()=>{
+        count ++;
+        updateDisplay();
+     })
+     decreasebutton.addEventListener("click",()=>{
+        count --;
+        updateDisplay();
+     })
+
+    </script>
+</body>
+</html>

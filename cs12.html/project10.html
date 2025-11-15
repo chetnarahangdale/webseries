@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px
+            
+        }
+        .box{
+            height: 900px;
+            border: 2px solid black;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+     <img src="https://static.vecteezy.com/system/resources/thumbnails/033/093/579/small/cute-knitted-snowmen-in-the-snow-christmas-background-ai-generated-photo.jpg" alt="" onclick="winter()">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFM3z15JbeEra26ju3pKKwLw3X7ern3KviQ&s" alt="" onclick="princess()">
+     <img src="https://gurgaonbakers.com/wp-content/uploads/2021/02/chocolate-doremon-cake.jpg" alt="" onclick="doremon()">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7eYVmFVF5Vy81oo6Ap1-J3pbdlj94vjkdMw&s" alt="" onclick="hanuman()">
+     <img src="https://www.goodmorningsite.com/wp-content/uploads/2023/08/Unique-Good-Morning-Nature-2023-Images-Whatsapp-PhotoOfTheDay-Lovely.jpg" alt="" onclick="nature()">
+     <div class="box"></div>
+     <script>
+        let box= document.querySelector(".box")
+        function  winter(){
+          box.style.backgroundImage= `url(https://static.vecteezy.com/system/resources/thumbnails/033/093/579/small/cute-knitted-snowmen-in-the-snow-christmas-background-ai-generated-photo.jpg)`;
+        }
+        function doremon(){
+            box.style.backgroundImage=`url(https://gurgaonbakers.com/wp-content/uploads/2021/02/chocolate-doremon-cake.jpg)`;
+        }
+        function hanuman(){
+            box.style.backgroundImage=`url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7eYVmFVF5Vy81oo6Ap1-J3pbdlj94vjkdMw&s)`
+        }
+        function nature(){
+            box.style.backgroundImage=`url(https://www.goodmorningsite.com/wp-content/uploads/2023/08/Unique-Good-Morning-Nature-2023-Images-Whatsapp-PhotoOfTheDay-Lovely.jpg)`
+        }
+        function princess(){
+            box.style.backgroundImage=`url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFM3z15JbeEra26ju3pKKwLw3X7ern3KviQ&s)`
+        }
+     </script>
+</body>
+</html>

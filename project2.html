@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .day{
+            color: #49df20;
+            background-color: blanchedalmond;
+        }
+        .night{
+            color: blueviolet;
+            background-color: black;
+        }
+    </style>
+</head>
+<body >
+    <h1>heyy evervone</h1>
+    <!-- <button onclick="day()">day</button> -->
+    <button onclick="night()">night</button>
+
+    <script>
+       let body=document.querySelector("body")
+       let title=document.querySelector("h1")
+    //    function day(){
+    //     title.innerHTML="good morning"
+    //     body.classList.add("day")
+    //     body.classList.remove("night")
+    //    }
+       function night(){
+        title.innerHTML="good night"
+        // 
+        // body.classList.add("night")
+        // body.classList.remove("day")
+        body.classList.toggle("night")
+       }
+    </script>
+</body>
+</html>
+
+<!-- use classList add remove toggle -->

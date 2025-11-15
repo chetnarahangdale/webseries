@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    h1{
+        color: #ff2f00;
+    }
+    button{
+        color: black;
+        background-color: #1da29d;
+        border-radius: 50px;
+        height: 50px;
+        width: 200px;
+
+    }
+    p{
+       color: blue;
+       font-size: xx-large;
+    }
+    input{
+        border-radius: 50px;
+        height: 50px;
+        width: 270px;
+    }
+    </style>
+</head>
+<body>
+    <h1>NUMBER PREDECTION GAME</h1>
+    <p> 0 to 5</p>
+    <input type="text">
+    <button onclick="game()">check</button>
+    <p class="result">result</p>
+    <p class="bonus">bonus</p>
+    <p class="status">status</p>
+    <script>
+        let bonusstatus= document.querySelector(".bonus");
+        let bonus = 100;
+        let body = document.querySelector("body")
+        function game(){
+            let userinput = Number(document.querySelector("input").value)
+            let computerinput = Math.floor(Math.random()*5);
+            let result = document.querySelector(".result")
+            let status = document.querySelector(".status")
+         if (userinput==computerinput) {
+            status.innerHTML="you won||"
+            bonus+=10
+            body.style.backgroundColor="pink"
+         } else {
+            status.innerHTML="you lost||"
+            bonus-=10
+            body.style.backgroundColor="yellow"
+         }
+         result.innerHTML=computerinput
+         bonusstatus.innerHTML=bonus;
+        }
+    </script>
+</body>
+</html>
